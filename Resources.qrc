@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/floder.png</file>
+        <file>images/next.png</file>
+        <file>images/pause.png</file>
+        <file>images/play.png</file>
+        <file>images/previous.png</file>
+        <file>images/volume.png</file>
+        <file>images/logo.png</file>
+    </qresource>
+</RCC>
