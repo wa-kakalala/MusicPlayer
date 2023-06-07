@@ -28,11 +28,18 @@ private slots:
 
     void on_contentList_doubleClicked(const QModelIndex &index);
 
+    void on_previous_clicked();
+
+    void on_next_clicked();
+
+    void on_playprogress_sliderReleased();
+
 private:
     Ui::Widget *ui;
     QString default_music_filepath;
     QMediaPlayer* mediaPlayer;
     QString music_filepath;
     QStringList playList;
+    qint16      nowIndex;
 };
 #endif // WIDGET_H
