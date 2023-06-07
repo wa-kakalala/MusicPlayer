@@ -168,6 +168,137 @@ QPushButton:hover{
     </item>
    </layout>
   </widget>
+  <widget class="QSlider" name="playprogress">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>480</y>
+     <width>341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider::groove:horizontal {
+  border: 0px solid #bbb;
+}
+ 
+QSlider::sub-page:horizontal {
+  background: rgb(255,255,0);
+  border-radius: 0px;
+  margin-top: 8px;
+  margin-bottom: 9px;
+}
+ 
+QSlider::add-page:horizontal {
+  background: rgb(0,0,0);
+  border: 0px solid #777; 
+  border-radius: 2px; 
+  margin-top: 8px; 
+  margin-bottom: 9px; 
+}
+ 
+QSlider::handle:horizontal { 
+  background: rgb(255,255,255); 
+  border: 1px solid rgba(102,102,102,102); 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 5px; 
+  margin-top: 2px; 
+  margin-bottom: 2px; 
+}
+ 
+QSlider::handle:horizontal:hover { 
+  background: rgb(255,255,0); 
+  border: 1px solid rgba(102,102,102,102); 
+  border-radius: 5px; 
+}
+ 
+QSlider::sub-page:horizontal:disabled { 
+  background: #bbb; 
+  border-color: #999; 
+}
+ 
+QSlider::add-page:horizontal:disabled { 
+  background: #eee; 
+  border-color: #999; 
+}
+ 
+QSlider::handle:horizontal:disabled { 
+  background: #eee; 
+  border: 1px solid #aaa; 
+  border-radius: 4px; 
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="currentTime">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="totalTime">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>00:00</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QListWidget" name="contentList">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QListWidget {
+	font: 25 9pt &quot;Microsoft YaHei&quot;;
+	border: 15px solid white; /* 设置边框的大小，样式，颜色 */
+	border-radius: 10px;
+}</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="Resources.qrc"/>
